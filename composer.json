@@ -1,0 +1,12 @@
+{
+    "name": "scaleplan/get-instance",
+    "description": "Trait for supporting singleton design pattern",
+    "autoload": {
+        "psr-4": {
+            "Scaleplan\\GetInstance\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0"
+    }
+}
