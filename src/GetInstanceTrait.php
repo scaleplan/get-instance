@@ -11,7 +11,7 @@ namespace Scaleplan\GetInstance;
  */
 trait GetInstanceTrait
 {
-    public static $instance;
+    protected static $instance;
 
     /**
      * Синглтон
@@ -20,7 +20,7 @@ trait GetInstanceTrait
      *
      * @return mixed
      */
-    public static function getInstance(...$params)
+    public static function getInstance(...$params) : self
     {
         if (!static::$instance) {
             $className = static::class;
